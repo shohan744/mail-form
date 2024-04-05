@@ -64,5 +64,26 @@
   </div>
 </div>
 
+  <script>
+document.addEventListener('DOMContentLoaded', function () {
+  // Function to enable/disable the date input based on the radio button selection
+  function toggleDateInput() {
+    // Check if the 'specificDate' radio button is checked
+    var isDateSelected = document.getElementById('specificDate').checked;
+    // Enable the date input if 'specificDate' is checked, disable otherwise
+    document.getElementById('startDate').disabled = !isDateSelected;
+  }
+
+  // Attach the toggle function to the radio buttons
+  var radioButtons = document.querySelectorAll('input[name="beginForwarding"]');
+  radioButtons.forEach(function(button) {
+    button.addEventListener('change', toggleDateInput);
+  });
+
+  // Call the function to set the initial state
+  toggleDateInput();
+});
+</script>
+
 </body>
 </html>
