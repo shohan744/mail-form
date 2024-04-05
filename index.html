@@ -23,20 +23,21 @@
 
     <div class="form-group">
       <label class="checkbox-label">Please Begin Forwarding:</label>
-      <div>
-        <input type="checkbox" id="adjournment" name="beginForwarding" value="adjournment">
-        <label class="inline-label" for="adjournment">Upon Adjournment of Regular Legislative Session</label>
-      </div>
-      <div>
-        <input type="checkbox" id="specificDate" name="beginForwarding" value="specificDate">
-        <label class="inline-label" for="specificDate">Beginning This Date:</label>
-        <input type="date" id="startDate" name="startDate">
-      </div>
-      <div>
-        <input type="checkbox" id="doNotForward" name="beginForwarding" value="doNotForward">
-        <label class="inline-label" for="doNotForward">Do Not Forward</label>
-      </div>
+    <div>
+      <input type="radio" id="adjournment" name="beginForwarding" value="adjournment">
+      <label class="inline-label" for="adjournment">Upon Adjournment of Regular Legislative Session</label>
     </div>
+    <div>
+      <input type="radio" id="specificDate" name="beginForwarding" value="specificDate">
+      <label class="inline-label" for="specificDate">Beginning This Date:</label>
+      <input type="date" id="startDate" name="startDate" disabled>
+    </div>
+    <div>
+      <input type="radio" id="doNotForward" name="beginForwarding" value="doNotForward">
+      <label class="inline-label" for="doNotForward">Do Not Forward</label>
+    </div>
+    </div>
+
 
     <div class="form-group">
       <label for="forwardTo">Please Forward To:</label>
