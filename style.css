@@ -21,10 +21,10 @@ form {
 label {
   display: inline-block;
   margin-right: 10px;
-  /* Align text to the top to match the checkbox */
+  /* Aligns text to the top to match the checkbox */
   vertical-align: top;
   margin-bottom: 5px;
-  /* Same size as the checkbox height */
+  /* make sure the same as checkbox height */
   line-height: 24px;
 }
 input[type=text], input[type=email], input[type=date], textarea {
@@ -38,7 +38,7 @@ input[type=checkbox] {
   /* Align checkbox to the top with the text */
   vertical-align: top;
   margin-right: 5px;
-  /* Adjust margin to align with the text */
+  /* Adjusts margin to align with the text */
   margin-top: 4px;
 }
 .button-container {
